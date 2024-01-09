@@ -15,5 +15,17 @@ dependencyResolutionManagement {
     }
 }
 rootProject.name = "Multi-Module Project"
+
 include(":app")
+
+include(":core:common")
 include(":core:data")
+include(":core:database")
+include(":core:datastore")
+include(":core:domain")
+include(":core:model")
+include(":core:network")
+
+include(":feature:foryou")
+include(":feature:bookmarks")
+include(":feature:settings")

@@ -184,4 +184,3 @@ my-android-lint = { id = "my.android.lint", version = "unspecified" }
 my-android-room = { id = "my.android.room", version = "unspecified" }
 my-android-test = { id = "my.android.test", version = "unspecified" }
 my-jvm-library = { id = "my.jvm.library", version = "unspecified" }
-kotlinAndroid = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin1922" }
