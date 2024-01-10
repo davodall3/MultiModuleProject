@@ -1,14 +1,16 @@
 plugins {
     alias(libs.plugins.my.android.application)
     alias(libs.plugins.my.android.application.compose)
+    alias(libs.plugins.my.android.hilt)
+    id("com.google.android.gms.oss-licenses-plugin")
 }
 
 android {
-    namespace = "com.example.multi_moduleproject"
+    namespace = "com.google.samples.apps.multi_moduleproject"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.example.multi_moduleproject"
+        applicationId = "com.google.samples.apps.multi_moduleproject"
         minSdk = 24
         targetSdk = 34
         versionCode = 1
@@ -40,20 +42,27 @@ android {
 }
 
 dependencies {
+    implementation(projects.feature.foryou)
+    implementation(projects.feature.bookmarks)
+    implementation(projects.feature.settings)
 
-    implementation("androidx.core:core-ktx:1.12.0")
-    implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.6.2")
-    implementation("androidx.activity:activity-compose:1.8.2")
-    implementation(platform("androidx.compose:compose-bom:2023.08.00"))
-    implementation("androidx.compose.ui:ui")
-    implementation("androidx.compose.ui:ui-graphics")
-    implementation("androidx.compose.ui:ui-tooling-preview")
-    implementation("androidx.compose.material3:material3")
-    testImplementation("junit:junit:4.13.2")
-    androidTestImplementation("androidx.test.ext:junit:1.1.5")
-    androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
-    androidTestImplementation(platform("androidx.compose:compose-bom:2023.08.00"))
-    androidTestImplementation("androidx.compose.ui:ui-test-junit4")
-    debugImplementation("androidx.compose.ui:ui-tooling")
-    debugImplementation("androidx.compose.ui:ui-test-manifest")
+    implementation(projects.core.common)
+    implementation(projects.core.data)
+    implementation(projects.core.model)
+    implementation(projects.core.ui)
+
+    implementation(libs.androidx.activity.compose)
+    implementation(libs.androidx.core.ktx)
+    implementation(libs.androidx.core.splashscreen)
+    implementation(libs.androidx.tracing.ktx)
+    implementation(libs.androidx.lifecycle.runtimeCompose)
+    implementation(libs.androidx.compose.material3.windowSizeClass)
+    api(libs.androidx.compose.material3)
+    implementation(libs.androidx.navigation.compose)
+    implementation(libs.androidx.profileinstaller)
+    implementation(libs.kotlinx.coroutines.guava)
+    implementation(libs.coil.kt)
+
+    debugImplementation(libs.androidx.compose.ui.testManifest)
+
 }

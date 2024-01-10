@@ -14,8 +14,9 @@ dependencyResolutionManagement {
         mavenCentral()
     }
 }
-rootProject.name = "Multi-Module Project"
+rootProject.name = "Multi-Module-Project"
 
+enableFeaturePreview("TYPESAFE_PROJECT_ACCESSORS")
 include(":app")
 
 include(":core:common")
@@ -29,3 +30,4 @@ include(":core:network")
 include(":feature:foryou")
 include(":feature:bookmarks")
 include(":feature:settings")
+include(":core:ui")

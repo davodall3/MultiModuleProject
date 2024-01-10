@@ -1,4 +1,4 @@
-package com.example.multi_moduleproject.ui.theme
+package com.google.samples.apps.multi_moduleproject.ui.theme
 
 import androidx.compose.ui.graphics.Color
 

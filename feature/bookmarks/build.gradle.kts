@@ -3,7 +3,7 @@ plugins {
 }
 
 android {
-    namespace = "com.feature.bookmarks"
+    namespace = "com.google.samples.apps.multi_moduleproject.feature.bookmarks"
     compileSdk = 34
 
     defaultConfig {

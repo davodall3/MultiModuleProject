@@ -1,4 +1,4 @@
-package com.example.multi_moduleproject
+package com.google.multi_moduleproject
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4

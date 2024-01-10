@@ -1,4 +1,4 @@
-package com.example.multi_moduleproject
+package com.google.multi_moduleproject
 
 import org.junit.Test
 

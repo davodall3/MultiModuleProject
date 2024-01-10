@@ -1,4 +1,4 @@
-package com.example.multi_moduleproject
+package com.google.samples.apps.multi_moduleproject
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -9,8 +9,7 @@ import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.tooling.preview.Preview
-import com.example.multi_moduleproject.ui.theme.MultiModuleProjectTheme
+import com.google.samples.apps.multi_moduleproject.ui.theme.MultiModuleProjectTheme
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -35,12 +34,4 @@ fun Greeting(name: String, modifier: Modifier = Modifier) {
         text = "Hello $name!",
         modifier = modifier
     )
-}
-
-@Preview(showBackground = true)
-@Composable
-fun GreetingPreview() {
-    MultiModuleProjectTheme {
-        Greeting("Android")
-    }
 }

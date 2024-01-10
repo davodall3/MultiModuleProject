@@ -4,7 +4,6 @@ plugins {
     `kotlin-dsl`
 }
 
-
 group = "com.google.samples.apps.multi_moduleproject.buildlogic"
 
 // Configure the build-logic plugins to target JDK 17
@@ -36,7 +35,6 @@ tasks {
         failOnWarning = true
     }
 }
-
 
 gradlePlugin {
     plugins {

@@ -3,7 +3,7 @@ plugins {
 }
 
 android {
-    namespace = "com.feature.settings"
+    namespace = "com.google.samples.apps.multi_moduleproject.feature.settings"
     compileSdk = 34
 
     defaultConfig {
